@@ -1,0 +1,16 @@
+[versions]
+springBoot = "4.0.6"
+springModulith = "2.0.6"
+dependencyMgmt = "1.1.7"
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
+spring-dependency-mgmt = { id = "io.spring.dependency-management", version.ref = "dependencyMgmt" }
+
+[libraries]
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
+spring-modulith-bom = { module = "org.springframework.modulith:spring-modulith-bom", version.ref = "springModulith" }
+
+spring-modulith-core = { module = "org.springframework.modulith:spring-modulith-starter-core" }
+spring-modulith-jpa = { module = "org.springframework.modulith:spring-modulith-starter-jpa" }
+spring-modulith-test = { module = "org.springframework.modulith:spring-modulith-starter-test" }
